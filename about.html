@@ -20,6 +20,10 @@
     <link rel="stylesheet" href="assets/css/custom.css">
     <link rel="stylesheet" href="./assets/css/myStyle.css">
 
+     <!-- ! Aos js animate scroll css -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <!-- ! Aos js animate scroll css -->
+
 </head>
 
 <body>
@@ -219,16 +223,17 @@
         <div class="container">
             <div class="row d-flex align-items-center py-5">
                 <div class="col-lg-6 text-start">
-                    <h1 class="h2 py-5 text-primary typo-space-line">Biz haqimizda</h1>
-                    <p class="light-300">
+                    <h1 data-aos="fade-up" data-aos-duration="1000" class="h2 py-5 text-primary typo-space-line">Biz haqimizda</h1>
+                    <p data-aos="fade-up" data-aos-duration="1500" class="light-300">
                         Vector illustration credit goes to <a rel="nofollow" href="http://freepik.com/" class="green-span" target="_blank">FreePik</a> website. Purple Buzz is provided by TemplateMo. Lorem ipsum dolor sit amet, consectetur.
                     </p>
                 </div>
-                <div class="col-lg-6">
-                    <img src="./assets/img/team.svg" width="100%" height="100%">
+                <div class="col-lg-6 banner-img">
+                    <img src="./assets/img/team.svg" data-aos="zoom-in" data-aos-duration="1200" width="100%" height="100%">
                 </div>
             </div>
         </div>
+        <div class="banner-bgc"></div>
     </section>
     <!-- End Banner Hero -->
 
@@ -238,7 +243,7 @@
         <div class="pt-5 pb-3 d-lg-flex align-items-center gx-5">
 
             <div class="col-lg-3">
-                <h2 class="h2 py-5 typo-space-line">Our Team</h2>
+                <h2 class="h2 py-5 typo-space-line">Bizning jamoa</h2>
                 <p class="text-muted light-300">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -354,7 +359,7 @@
     <!-- End Progress -->
 
     <!-- Start Choice -->
-    <section class="why-us banner-bg bg-light">
+    <section class="why-us banner-bg bg-light py-5">
         <div class="container my-4">
             <div class="row">
                 <div class="banner-img col-lg-5">
@@ -370,50 +375,9 @@
     </section>
     <!-- End Choice -->
 
-    <!-- Start Aim -->
-    <section class="banner-bg bg-white py-5">
-        <div class="container my-4">
-            <div class="row text-center">
-
-                <div class="objective col-lg-4">
-                    <div class="objective-icon card m-auto py-4 mb-2 mb-sm-4 bg-secondary shadow-lg">
-                        <i class="display-4 bx bxs-bulb text-light"></i>
-                    </div>
-                    <h2 class="objective-heading h3 mb-2 mb-sm-4 light-300">Our Vision</h2>
-                    <p class="light-300">
-                        Incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse commodo viverra.
-                    </p>
-                </div>
-
-                <div class="objective col-lg-4 mt-sm-0 mt-4">
-                    <div class="objective-icon card m-auto py-4 mb-2 mb-sm-4 bg-secondary shadow-lg">
-                        <i class='display-4 bx bx-revision text-light'></i>
-                    </div>
-                    <h2 class="objective-heading h3 mb-2 mb-sm-4 light-300">Our Mission</h2>
-                    <p class="light-300">
-                        Eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam quis.
-                    </p>
-                </div>
-
-                <div class="objective col-lg-4 mt-sm-0 mt-4">
-                    <div class="objective-icon card m-auto py-4 mb-2 mb-sm-4 bg-secondary shadow-lg">
-                        <i class="display-4 bx bxs-select-multiple text-light"></i>
-                    </div>
-                    <h2 class="objective-heading h3 mb-2 mb-sm-4 light-300">Our Goal</h2>
-                    <p class="light-300">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                        sed do eiusmod tempor.
-                    </p>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- End Aim -->
 
     <!-- Start Contact -->
-    <section class="banner-bg bg-light py-5">
+    <section class="banner-bg py-5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 mx-auto my-4 p-3">
@@ -433,14 +397,15 @@
 
 
     <!-- Start Footer -->
-    <footer class="bg-secondary pt-4">
+    <footer class="bg-secondary footer">
+        <div class="bg-footer"></div>
         <div class="container">
-            <div class="row py-4">
+            <div class="row">
 
                 <div class="col-lg-3 col-12 align-left">
                     <a class="navbar-brand" href="index.html">
                         <i class='bx bx-buildings bx-sm text-light'></i>
-                        <span class="text-light h5">Coder Labs</span> <span class="text-light h5 semi-bold-600">Buzz</span>
+                        <span class="text-light h5">Coder</span> <span class="text-light h5 semi-bold-600">Labs</span>
                     </a>
                     <p class="text-light my-lg-4 my-2">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit,
@@ -469,29 +434,34 @@
                         </li>
                         <li class="list-inline-item m-0">
                             <a class="text-light" target="_blank" href="https://www.medium.com/">
-                                <i class='bx bxl-medium-square bx-md' ></i>
+                                <i class='bx bxl-medium-square bx-md'></i>
                             </a>
                         </li>
                     </ul>
                 </div>
 
                 <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
-                    <h3 class="h4 pb-lg-3 text-light light-300">Our Company</h2>
+                    <h3 class="h4 pb-lg-3 text-light light-300">Bizning kompaniya</h2>
                         <ul class="list-unstyled text-light light-300">
                             <li class="pb-2">
-                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light" href="index.html">Home</a>
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                    class="text-decoration-none text-light" href="index.html">Bosh sahifa</a>
                             </li>
                             <li class="pb-2">
-                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="about.html">About Us</a>
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                    class="text-decoration-none text-light py-1" href="about.html">Biz haqimizda</a>
                             </li>
                             <li class="pb-2">
-                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="work.html">Work</a>
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                    class="text-decoration-none text-light py-1" href="work.html">Ishlarimiz</a>
                             </li>
                             <li class="pb-2">
-                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i></i><a class="text-decoration-none text-light py-1" href="pricing.html">Price</a>
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i></i><a
+                                    class="text-decoration-none text-light py-1" href="pricing.html">Narxlar</a>
                             </li>
                             <li class="pb-2">
-                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="contact.html">Contact</a>
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                    class="text-decoration-none text-light py-1" href="contact.html">Aloqa</a>
                             </li>
                         </ul>
                 </div>
@@ -500,22 +470,28 @@
                     <h2 class="h4 pb-lg-3 text-light light-300">Our Works</h2>
                     <ul class="list-unstyled text-light light-300">
                         <li class="pb-2">
-                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="#">Branding</a>
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                class="text-decoration-none text-light py-1" href="#">Branding</a>
                         </li>
                         <li class="pb-2">
-                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="#">Business</a>
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                class="text-decoration-none text-light py-1" href="#">Business</a>
                         </li>
                         <li class="pb-2">
-                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="#">Marketing</a>
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                class="text-decoration-none text-light py-1" href="#">Marketing</a>
                         </li>
                         <li class="pb-2">
-                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="#">Social Media</a>
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                class="text-decoration-none text-light py-1" href="#">Social Media</a>
                         </li>
                         <li class="pb-2">
-                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="#">Digital Solution</a>
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                class="text-decoration-none text-light py-1" href="#">Digital Solution</a>
                         </li>
                         <li class="pb-2">
-                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="#">Graphic</a>
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                class="text-decoration-none text-light py-1" href="#">Graphic</a>
                         </li>
                     </ul>
                 </div>
@@ -524,10 +500,12 @@
                     <h2 class="h4 pb-lg-3 text-light light-300">For Client</h2>
                     <ul class="list-unstyled text-light light-300">
                         <li class="pb-2">
-                            <i class='bx-fw bx bx-phone bx-xs'></i><a class="text-decoration-none text-light py-1" href="tel:010-020-0340">010-020-0340</a>
+                            <i class='bx-fw bx bx-phone bx-xs'></i><a class="text-decoration-none text-light py-1"
+                                href="tel:010-020-0340">010-020-0340</a>
                         </li>
                         <li class="pb-2">
-                            <i class='bx-fw bx bx-mail-send bx-xs'></i><a class="text-decoration-none text-light py-1" href="mailto:info@company.com">info@company.com</a>
+                            <i class='bx-fw bx bx-mail-send bx-xs'></i><a class="text-decoration-none text-light py-1"
+                                href="mailto:info@company.com">info@company.com</a>
                         </li>
                     </ul>
                 </div>
@@ -535,17 +513,18 @@
             </div>
         </div>
 
-        <div class="w-100 bg-primary py-3">
+        <div class="w-100 bg-primary py-3 min-footer">
             <div class="container">
                 <div class="row pt-2">
                     <div class="col-lg-6 col-sm-12">
                         <p class="text-lg-start text-center text-light light-300">
-                            © Copyright 2021 Purple Buzz Company. All Rights Reserved.
+                            © Copyright 2021 Coder Labs Company. All Rights Reserved.
                         </p>
                     </div>
                     <div class="col-lg-6 col-sm-12">
                         <p class="text-lg-end text-center text-light light-300">
-                            Designed by <a rel="sponsored" class="text-decoration-none text-light" href="https://templatemo.com/" target="_blank"><strong>TemplateMo</strong></a>
+                            Designed by <a rel="sponsored" class="text-decoration-none text-light"
+                                href="https://templatemo.com/" target="_blank"><strong>TemplateMo</strong></a>
                         </p>
                     </div>
                 </div>
@@ -565,6 +544,12 @@
     <script src="assets/js/templatemo.js"></script>
     <!-- Custom -->
     <script src="assets/js/custom.js"></script>
+     <!-- ! Aos js animate scroll js -->
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script>
+         AOS.init();
+     </script>
+     <!-- ! Aos js animate scroll js -->
 
 </body>
 
