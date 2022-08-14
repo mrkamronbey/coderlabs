@@ -200,6 +200,7 @@ ol {
     background: var(--bs-bg-light) !important;
 }
 
+
 .bg-secondary {
     background: var(--bs-bg-color) !important;
 }
@@ -235,6 +236,7 @@ ol {
     background: var(--bs-bg-color);
     color: #fff;
     font-size: 25px;
+    border-top-left-radius: 30px !important;
 }
 
 .card-body-title {
@@ -418,10 +420,15 @@ ol {
 .founded-man-text {
     color: #6c757d;
 }
-
+.card{
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
 .card-footer {
     padding: 20px 0;
     background: #fff;
+    border-bottom-right-radius: 30px !important;
+    /* border-bottom-left-radius: 30px !important; */
 }
 
 .footer-p {
@@ -571,17 +578,12 @@ ol {
     background-size: cover !important;
     background-repeat: no-repeat !important;
 }
-/* .min-footer{
-    background: #fff !important;
-    background-image: url('../img/minfooter1.svg') !important;
-    background-position: bottom center !important;
-    background-size: cover !important;
-    background-repeat: no-repeat !important;
-    
-} */
-
-
 /* Landing page */
+/* about page */
+.overflow-section{
+    overflow-x: hidden;
+}
+/* about page */
 
 /* ! Swipper slider css */
 .swiper {
